@@ -1,0 +1,61 @@
+"""
+@Materi: Determine the number of days of month
+@Judul: Praktikum 2 Modul 4
+@Hari/Tanggal: jumat, 15 10 2021
+@NIM: 065002100008
+@author: Aditya Saep Ramadhan
+"""
+
+print(" This program will determine the number of days of a given month")
+print(" Enter -1 to stop the program")
+n = ''
+t = ''
+while n != -1:
+    n = int(input(" Enter the month (1-12) = "))
+    if n == 1:
+        print(" There are 31 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n == 2:
+        t = int(input(" Pleas enter the year (e.g., 2021) = "))
+        if t % 4 == 0 and t % 100 != 0 or t % 400 == 0:
+            print (" There are 29 days in the month ")
+            print(" Enter -1 to stop the program ")
+        else:
+            print(" There are 28 days in the month ")
+            print(" Enter -1 to stop the program ")
+    elif n == 3:
+        print(" There are 31 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n == 4:
+        print(" There are 30 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n == 5:
+        print(" There are 31 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n == 6:
+        print(" There are 30 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n == 7:
+        print(" There are 31 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n == 8:
+        print(" There are 31 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n == 9:
+        print(" There are 30 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n == 10:
+        print(" There are 31 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n == 11:
+        print(" There are 30 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n == 12:
+        print(" There are 31 days in the month ")
+        print(" Enter -1 to stop the program ")
+    elif n >= 12:
+        print(" Invalid value entered = ", n)
+    else:
+        print(" selesai ")
+
+print(" terimakasih ")
