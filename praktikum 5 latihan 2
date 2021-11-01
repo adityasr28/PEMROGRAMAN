@@ -1,0 +1,47 @@
+# praktikum 5 latihan 2
+"""
+     Pembelian Tiket
+ 
+@author = Aditya Saep Ramadhan
+@NIM = 065002100009
+@Tanggal = 18 oktober 2021
+"""
+
+print (' HAI SEMUA')
+print (' Selamat Datang di KAMPUNG STANDING')
+
+print (' Kamu telah membeli tiket ')
+
+n = '0'
+total = 0
+t = 0
+u = 0
+
+
+while n != '':
+    n = float(input(' Berapa Umurnya = '))
+    t += 1
+    if n == 0 :
+        break;    
+    elif n <= 2 :
+        print (' Harga = Gratis')
+        total += 0
+        print (" Totalnya adalah = ", total)
+    elif n >= 3  and n <= 12 :
+        print (' Harga = $14.00')
+        total += 14.00
+        print (" Totalnya adalah = ", total)
+    elif n >= 65 :
+        print (' Harga = $18.00')
+        total += 18.00
+        print (" Totalnya adalah = ", total)
+    else :
+        print (' Harga = $23.00')
+        total += 23.00
+        print (" Totalnya adalah = ", total)
+if t == 1:
+        print (" Gratisss ")
+else :
+        u =float(input(' Masukan Uang Anda ='))
+        kembalian = u-total
+        print (" Kembaliannya adalah :", kembalian)
