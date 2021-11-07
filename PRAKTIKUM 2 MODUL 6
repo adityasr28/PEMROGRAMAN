@@ -6,7 +6,7 @@ Created on Tue Nov 2 2021
 MODUL 6 PRAKTIKUM 2
 '''
 print(" This program will determine the number of days of a given month")
-print(" Enter -1 to stop the program")
+print(" Enter 0 to stop the program")
 def mont (n='', t=''):
     while n != 0:
         n = int(input(" Enter the month (1-12) = "))
