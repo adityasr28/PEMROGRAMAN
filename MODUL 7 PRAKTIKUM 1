@@ -1,0 +1,23 @@
+'''
+Created on Mon Nov 8 2021
+@author: Aditya Saep Ramadhan
+@NIM : 065002100008
+
+MODUL 7 PRAKTIKUM 1
+'''
+print(" Disini kita akan menentukan ")
+print(" Suatu bilangan PRIMA atau bukan PRIMA")
+
+nilai = int(input( "Masukan Nilai Anda ="))
+def prima (bil):
+    if nilai%2 == 1 :
+        print ("bilangan ini adalah bilangan  prima")
+    else:
+        nonprima(bil)
+
+def nonprima (bil):
+    if nilai%2 == 0 :
+        print ("bilangan ini adalah bukan bilangan prima")
+        print (nilai/2,"kali", nilai/2,"=",(nilai/2*nilai/2))
+
+prima(nilai)
