@@ -18,6 +18,6 @@ def prima (bil):
 def nonprima (bil):
     if nilai%2 == 0 :
         print ("bilangan ini adalah bukan bilangan prima")
-        print (nilai/2,"kali", nilai/2,"=",(nilai/2*nilai/2))
+        print (nilai/2,"kali", nilai/2,"=",(nilai/2*2))
 
 prima(nilai)
