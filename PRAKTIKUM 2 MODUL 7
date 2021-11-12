@@ -1,0 +1,36 @@
+"""
+Created on Fri Nov 12 2021
+
+@author: Aditya Saep Ramadhan
+@NIM : 065002100008
+
+PRAKTIKUM 2 MODUL 7
+"""
+
+
+print("Ordinal Number")
+t = False
+
+def ordinal(number):
+    if number in [10,11,12,13]:
+        print(number,'th')
+    else:
+        angka=number%10
+        if angka==1:
+            print(number,'st')
+        elif angka==2:
+            print(number,'nd')
+        elif angka==3:
+            print(number,'rd')
+        else:
+            print(number,'th')
+
+while not t:
+    print("Masukkan 0 untuk menghentikan program")
+    number = int(input("Masukan Angka: "))
+    if number == 0:
+        t = True
+        print(number,'th')
+        print("Terimakasih telah menggunakan program ini")
+    else:
+        ordinal(number)
