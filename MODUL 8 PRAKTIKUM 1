@@ -1,0 +1,31 @@
+'''
+Created on Mon Nov 15 2021
+@author: Aditya Saep Ramadhan
+@NIM : 065002100008
+
+MODUL 8 PRAKTIKUM 1
+'''
+
+
+print('Menghitung jumlah')
+
+
+def jumlah (n= 0, j= 0 ,i = 1):
+   if (j <=0):
+       hasil =0
+       return hasil
+   else :
+         n = int(input("Masukkan angka ke-" + str(i) + ":"))
+         if (j ==1):
+             return n
+         else :
+             i+=1
+             hasil = n + jumlah (n, j-1, i)
+             return hasil
+             
+nilai = int(input('Masukkan jumlah :'))
+total = jumlah (j=nilai)
+print ("Hasil dari penjumlahannya  :"+ str(total)) 
+
+
+
