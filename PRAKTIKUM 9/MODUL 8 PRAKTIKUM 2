@@ -1,0 +1,31 @@
+'''
+Created on Sat Nov 20 2021
+@author: Aditya Saep Ramadhan
+@NIM : 065002100008
+
+MODUL 8 PRAKTIKUM 2
+'''
+
+
+print('Ini merupakan Program Pemangkatan Negatif dan Positif')
+print('Tekan Enter untuk Menghentikan Program')
+
+n = False
+def menghitung_Pangkat(angka, pangkat):
+  if pangkat > 1:
+    return angka * menghitung_Pangkat(angka, pangkat - 1)
+  elif pangkat == 0:
+      return 1
+  else:
+    return angka
+
+while (not n):
+    masukan_angka = input('Masukkan angka: ')
+    
+    if masukan_angka:
+        masukan_pangkat = int(input('Masukkan pangkat: '))
+        menghitung_Pangkat(int(masukan_angka),masukan_pangkat)
+        hasil = menghitung_Pangkat(int(masukan_angka),masukan_pangkat)
+        print('Hasilnya adalah =',hasil) 
+    elif masukan_angka == '':
+        n = True
