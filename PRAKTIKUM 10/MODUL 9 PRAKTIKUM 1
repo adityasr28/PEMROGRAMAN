@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+'''
+Created on Fri Nov 26 2021
+@author: Aditya Saep Ramadhan
+@NIM : 065002100008
+
+MODUL 9 PRAKTIKUM 1
+'''
+def write(data):
+    f = open("Biodata.txt", "w")
+    f.write(data)
+    f.close()
+    
+def read():
+    h = open("Biodata.txt", 'r')
+
+    line = h.readline()
+    print(line)
+    while line:
+        line = h.readline()
+        print(line)
+
+    h.close()
+        
+print ("Masukan Biodata kamu")
+
+nama = input("Nama: ")
+umur = input("Umur: ")
+alamat = input("Alamat: ")
+email = input ("Email:")
+dosen = input ("Dosen :")
+data= "Nama: {}\nUmur: {}\nAlamat: {}\nEmail: {}\nDosen: {}\n".format(nama, umur, alamat, email, dosen)
+
+print("=========================")
+write(data)
+print("ini nih data kamu")
+read()
