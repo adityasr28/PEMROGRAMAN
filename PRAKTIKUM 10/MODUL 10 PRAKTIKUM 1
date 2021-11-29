@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+'''
+Created on Mon Nov 29 2021
+@author: Aditya Saep Ramadhan
+@NIM : 065002100008
+
+MODUL 10 PRAKTIKUM 1
+'''
+print("Sebelum diurutkan :[1,5,10,15,20,25,30,9]")
+myList = [1,5,10,15,20,25,30,9] 
+cari = int(input("Masukkan Angka Yang Anda Cari : ")) 
+
+def mengurutkan_angka(array):
+    n = len(array) 
+    for i in range(n): 
+        for j in range(n - i - 1):
+            if array[j] > array[j + 1]:
+                array[j], array[j + 1] = array[j + 1], array[j]
+    return array
+print("Sesudah diurutkan",mengurutkan_angka(myList))
+
+
+def mencari_angka(List,search):
+    counter = 0
+    while counter != len(myList):
+        if myList[counter] == search:
+            result = counter
+        counter -= 1
+    return result
+
+
+hasil = mencari_angka(myList,cari)
+if cari not in myList:
+    print("Angka tidak ditemukan !!!")
+else:
+    print('Angka %s yang anda cari berada di posisi ke- %s'% (cari,hasil))
