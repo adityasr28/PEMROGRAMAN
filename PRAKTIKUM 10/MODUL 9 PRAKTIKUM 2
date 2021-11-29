@@ -1,0 +1,63 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+'''
+Created on Mon Nov 29 2021
+@author: Aditya Saep Ramadhan
+@NIM : 065002100008
+
+MODUL 9 PRAKTIKUM 2
+'''
+def write(data):
+    f = open(namafile+".txt", "w")
+    f.write(data)
+    f.close()
+    
+def read():
+    f = open(namafile+".txt", "r")
+    text = f.read()
+    print(text)
+    f.close()
+    
+def add_teks(data):
+    f = open(namafile+".txt", "a")
+    f.write(data)
+    f.close()
+    
+
+salah=False
+while (not salah) :
+    print("====PROGRAM FILE HANDLING====")
+    print("1. Membuat dan Menulis File")
+    print("2. Membaca File")
+    print("3. Menambahkan Text pada File")
+    print("4. Keluar dari Program")
+    n = int(input("Masukan Pilihan Berupa Angka (1/2/3/4): "))
+    print("")
+        
+    if n ==4 :
+        salah=True
+        print("Terimakasih Sudah Meggunakan Program Saya")
+    elif n ==1:
+        namafile=input("Masukan Nama File: ")
+        nama=input("Masukan Namamu: ")
+        nim=int(input("Masukan NIM kamu: "))
+        tahun=int(input("Masukan Tahun Angkatanmu: "))
+        data="Nama: {}\nNIM: {}\nAngkatan: {}".format(nama,nim,tahun)
+        write(data)
+        print("\n\nFile Berhasil dibuat\n\n")
+    elif n ==2:
+        namafile=input("Masukan Nama File: ")
+        print("")
+        read()
+        print("")
+    elif n ==3:
+        namafile=input("Masukan Nama File: ")
+        Nama=input("Masukan Nama Temanmu: ")
+        catatan=input("Masukan Catatan Tambahahn Kamu: ")
+        data="\nNama Teman: {}\nCatatan: {}".format(Nama,catatan)
+        print("")
+        add_teks(data)
+        print("\n\nTeks Berhasil ditambahkan\n\n")
+    else :
+        print("\nData Salah\nUlangi lagi!!!\n")
+            
