@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+'''
+Created on Mon Des 06 2021
+@author: Aditya Saep Ramadhan
+@NIM : 065002100008
+
+MODUL 11 PRAKTIKUM 1
+
+'''
+
+class Mahasiswa:
+    mahasiswaCount = 0
+    
+    def __init__(self, nama, nim, angkatan):
+        self.nama = nama
+        self.nim = nim
+        self.angkatan = angkatan
+        Mahasiswa.mahasiswaCount += 1
+        
+    def printMaha(self):
+        print("Nama : " + self.nama + "\nNim " + str(self.nim)+ "\nAngkatan :" + str(self.angkatan))
+                
+nama=input ("Masukan Namamu :")
+nim=str(input("masukan NIM-mu :"))
+angkatan=str(input("Masukan Angkatanmu :"))
+print("=========================")
+
+maha = Mahasiswa(nama,nim,angkatan)
+maha.printMaha()
+print("")
+print("Total Mahasiwanya adalah", Mahasiswa.mahasiswaCount)
