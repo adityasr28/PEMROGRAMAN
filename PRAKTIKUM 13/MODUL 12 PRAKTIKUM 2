@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+'''
+Created on Mon Des 20 2021
+@author: Aditya Saep Ramadhan
+@NIM : 065002100008
+
+MODUL 12 PRAKTIKUM 2
+
+'''
+
+import pandas as pd
+
+df = pd.read_csv('Negara.csv')
+df.head()
+
+mean = df.groupby(['Benua']).mean()
+std = df.groupby(['Benua']).std()
+print('DATA LUAS DAN POPULASI NEGARA DI DUNIA ')
+print(df)
+
+print('\nRata rata dari data diatas: ')
+a = open('NegaraMean.csv','w')
+a.write('Berikut Data Mean: \n')
+a.write(str(mean))
+a.close()
+print(mean)
+
+print('\nStandar Deviasi dari data diatas: ')
+b = open('NegaraStandarDeviasi.csv','w')
+b.write('Berikut Data Standard Deviation: \n')
+b.write(str(std))
+b.close()
+print(std)
+
+print('\nFile Berhasil Dibuat')
+print('\nDibuat oleh Aditya Saep Ramadahan, Terimakasih!\n')
